@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Event Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        html, body { height: 100%; margin: 0; }
+        #map { height: 100%; width: 100%; }
+        #controls { margin: 10px; position: absolute; top: 10px; left: 10px; background: white; padding: 10px; z-index: 1000; }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <label for="start">Start Stand:</label>
+        <select id="start"></select>
+        <label for="end">End Stand:</label>
+        <select id="end"></select>
+        <button onclick="showRoute()">Show Route</button>
+    </div>
+    <div id="map"></div>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([5.6229, -0.1718], 17);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        function getRandomOffset() {
+            return (Math.random() - 0.0025) * 0.005;
+        }
+
+        function getRandomColor() {
+            return '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+
+        let stands = [];
+        let startSelect = document.getElementById('start');
+        let endSelect = document.getElementById('end');
+        let routeLayer;
+
+        for (let i = 1; i <= 100; i++) {
+            let lat = 5.6229 + getRandomOffset();
+            let lng = -0.1718 + getRandomOffset();
+            let markerColor = getRandomColor();
+            let marker = L.circleMarker([lat, lng], {
+                radius: 8,
+                color: markerColor,
+                fillColor: markerColor,
+                fillOpacity: 1
+            }).addTo(map).bindPopup(`<b>Stand ${i}</b>`);
+            stands.push({ id: i, lat, lng, marker });
+            
+            let option = new Option(`Stand ${i}`, i);
+            startSelect.add(option.cloneNode(true));
+            endSelect.add(option);
+        }
+
+        let features = [
+            { name: 'Main Entrance', lat: 5.6232, lng: -0.1720, icon: 'https://cdn-icons-png.flaticon.com/32/3449/3449873.png' },
+            { name: 'Secondary Entrance', lat: 5.6226, lng: -0.1715, icon: 'https://cdn-icons-png.flaticon.com/32/3449/3449873.png' },
+            { name: 'Building A', lat: 5.6230, lng: -0.1717, icon: 'https://cdn-icons-png.flaticon.com/32/2793/2793091.png' },
+            { name: 'Building B', lat: 5.6227, lng: -0.1721, icon: 'https://cdn-icons-png.flaticon.com/32/2793/2793091.png' },
+            { name: 'Washroom 1', lat: 5.6228, lng: -0.1716, icon: 'https://cdn-icons-png.flaticon.com/32/2282/2282111.png' },
+            { name: 'Washroom 2', lat: 5.6231, lng: -0.1722, icon: 'https://cdn-icons-png.flaticon.com/32/2282/2282111.png' },
+            { name: 'Garden 1', lat: 5.6231, lng: -0.1719, icon: 'https://cdn-icons-png.flaticon.com/32/3081/3081360.png' },
+            { name: 'Garden 2', lat: 5.6227, lng: -0.1716, icon: 'https://cdn-icons-png.flaticon.com/32/3081/3081360.png' },
+            { name: 'Room A', lat: 5.6229, lng: -0.1717, icon: 'https://cdn-icons-png.flaticon.com/32/1828/1828797.png' },
+            { name: 'Room B', lat: 5.6230, lng: -0.1720, icon: 'https://cdn-icons-png.flaticon.com/32/1828/1828797.png' }
+        ];
+
+        features.forEach(feature => {
+            L.marker([feature.lat, feature.lng], {
+                icon: L.icon({
+                    iconUrl: feature.icon,
+                    iconSize: [25, 25]
+                })
+            }).addTo(map).bindPopup(`<b>${feature.name}</b>`);
+        });
+
+        function showRoute() {
+            let startId = parseInt(startSelect.value);
+            let endId = parseInt(endSelect.value);
+            if (startId === endId) return alert("Please select different stands.");
+
+            let start = stands.find(s => s.id === startId);
+            let end = stands.find(s => s.id === endId);
+
+            if (routeLayer) map.removeLayer(routeLayer);
+            routeLayer = L.polyline([[start.lat, start.lng], [end.lat, end.lng]], {color: 'red', weight: 3}).addTo(map);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Child Name,Parent Name,Date,Check In Time,Check Out Time,Status,Notes
+John Smith,Mary Smith,2024-01-15,08:00,15:30,Present,On time
+Sarah Johnson,David Johnson,2024-01-15,08:15,15:45,Present,Late arrival
+Michael Brown,Lisa Brown,2024-01-15,08:05,15:25,Present,Good attendance
+Emma Wilson,James Wilson,2024-01-15,08:30,15:30,Late,Arrived late
+Daniel Davis,Jennifer Davis,2024-01-15,08:00,15:00,Present,Left early
+Olivia Garcia,Robert Garcia,2024-01-15,08:10,15:35,Present,Regular attendance
+William Martinez,Maria Martinez,2024-01-15,08:20,15:40,Late,Traffic delay
+Sophia Rodriguez,Carlos Rodriguez,2024-01-15,08:00,15:30,Present,Perfect attendance
+Ethan Lopez,Ana Lopez,2024-01-15,08:25,15:25,Late,Medical appointment
+Ava Gonzalez,Luis Gonzalez,2024-01-15,08:05,15:35,Present,Good behavior 

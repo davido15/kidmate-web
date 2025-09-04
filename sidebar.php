@@ -17,6 +17,21 @@
                    <span class="nav-text">Manage Students</span>
                </a>
            </li>
+           <li><a href="manage_classes.php">
+                   <span><i class="ri-group-line"></i></span>
+                   <span class="nav-text">Manage Classes</span>
+               </a>
+           </li>
+           <li><a href="manage_subjects.php">
+                   <span><i class="ri-book-open-line"></i></span>
+                   <span class="nav-text">Manage Subjects</span>
+               </a>
+           </li>
+           <li><a href="manage_terms.php">
+                   <span><i class="ri-calendar-line"></i></span>
+                   <span class="nav-text">Manage Terms</span>
+               </a>
+           </li>
            <li><a href="manage_pickups.php">
                    <span><i class="ri-picture-in-picture-2-fill"></i></span>
                    <span class="nav-text">Manage Pickup Person</span>
@@ -38,6 +53,7 @@
                    <span class="nav-text">Manage Payment</span>
                </a>
            </li>
+
          
            <li class="logout"><a href="logout.php">
                    <span><i class="ri-logout-circle-line"></i></span>

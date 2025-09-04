@@ -1,0 +1,69 @@
+[2025-04-15 15:41:57] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C1500&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:41:58] - Response Code: 200
+[2025-04-15 15:41:58] - Response sent successfully with 0 results.
+[2025-04-15 15:44:40] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C3500&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:44:41] - Response Code: 200
+[2025-04-15 15:44:41] - Response sent successfully with 6 results.
+[2025-04-15 15:45:06] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C2000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:45:07] - Response Code: 200
+[2025-04-15 15:45:07] - Response sent successfully with 0 results.
+[2025-04-15 15:45:14] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C2000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:45:15] - Response Code: 200
+[2025-04-15 15:45:15] - Response sent successfully with 0 results.
+[2025-04-15 15:45:20] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C2500&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:45:20] - Response Code: 200
+[2025-04-15 15:45:20] - Response sent successfully with 6 results.
+[2025-04-15 15:46:23] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C2500&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:46:24] - Response Code: 200
+[2025-04-15 15:46:24] - Response sent successfully with 6 results.
+[2025-04-15 15:46:34] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C3500&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:46:34] - Response Code: 200
+[2025-04-15 15:46:34] - Response sent successfully with 6 results.
+[2025-04-15 15:46:44] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C5000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:46:45] - Response Code: 200
+[2025-04-15 15:46:45] - Response sent successfully with 10 results.
+[2025-04-15 15:49:11] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C5000&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:49:13] - Response Code: 200
+[2025-04-15 15:49:13] - Response sent successfully with 10 results.
+[2025-04-15 15:49:18] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C1000&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:49:20] - Response Code: 200
+[2025-04-15 15:49:20] - Response sent successfully with 8 results.
+[2025-04-15 15:49:33] - Request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C1500&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 15:49:33] - Response Code: 200
+[2025-04-15 15:49:33] - Response sent successfully with 10 results.
+[2025-04-15 16:19:43] - Places request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C2000&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=5&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:19:45] - Results returned: 5
+[2025-04-15 16:20:14] - Places request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C1500&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:20:15] - Results returned: 10
+[2025-04-15 16:20:21] - Places request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C1500&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:20:22] - Results returned: 10
+[2025-04-15 16:20:29] - Places request URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C1500&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:20:30] - Results returned: 10
+[2025-04-15 16:23:11] - Places Request: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C1000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:23:12] - Nearby search returned 0 places.
+[2025-04-15 16:23:19] - Places Request: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C1000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:23:19] - Nearby search returned 0 places.
+[2025-04-15 16:23:25] - Places Request: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C1000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:23:25] - Nearby search returned 0 places.
+[2025-04-15 16:23:50] - Places Request: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.31254467349354%2C5.6501865330757%2C1000&bias=proximity%3A-0.31254467349354%2C5.6501865330757&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:23:51] - Nearby search returned 0 places.
+[2025-04-15 16:27:18] - Geocoding location: Abelemkpe Road, Accra, Ghana | URL: https://api.geoapify.com/v1/geocode/search?text=Abelemkpe+Road%2C+Accra%2C+Ghana&format=json&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:27:19] - Resolved coordinates for 'Abelemkpe Road, Accra, Ghana': lat=5.609565, lon=-0.2119801
+[2025-04-15 16:27:19] - Nearby Search URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.2119801%2C5.609565%2C1500&bias=proximity%3A-0.2119801%2C5.609565&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:27:20] - Response Code: 200
+[2025-04-15 16:27:20] - Returned 10 nearby places.
+[2025-04-15 16:39:02] - Geocoding location: Aaron La Paz Accra | URL: https://api.geoapify.com/v1/geocode/search?text=Aaron+La+Paz+Accra&format=json&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:39:04] - Resolved coordinates for 'Aaron La Paz Accra': lat=5.545935, lon=-0.210089
+[2025-04-15 16:39:04] - Nearby Search URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.210089%2C5.545935%2C1500&bias=proximity%3A-0.210089%2C5.545935&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:39:05] - Response Code: 200
+[2025-04-15 16:39:05] - Returned 10 nearby places.
+[2025-04-15 16:40:00] - Geocoding location: Abilene Peak | URL: https://api.geoapify.com/v1/geocode/search?text=Abilene+Peak&format=json&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:40:00] - Resolved coordinates for 'Abilene Peak': lat=32.439893, lon=-99.740303
+[2025-04-15 16:40:00] - Nearby Search URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-99.740303%2C32.439893%2C1500&bias=proximity%3A-99.740303%2C32.439893&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:40:01] - Response Code: 200
+[2025-04-15 16:40:01] - Returned 6 nearby places.
+[2025-04-15 16:40:54] - Geocoding location: Osu, Accra | URL: https://api.geoapify.com/v1/geocode/search?text=Osu%2C+Accra&format=json&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:40:54] - Resolved coordinates for 'Osu, Accra': lat=5.5605929, lon=-0.1824391
+[2025-04-15 16:40:54] - Nearby Search URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.1824391%2C5.5605929%2C1500&bias=proximity%3A-0.1824391%2C5.5605929&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-04-15 16:40:56] - Response Code: 200
+[2025-04-15 16:40:56] - Returned 10 nearby places.

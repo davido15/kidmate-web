@@ -69,6 +69,12 @@ $stmt->close();
                                 <a class="btn btn-primary" href="add_attendance.php">
                                     <span><i class="bi bi-plus"></i></span>Add Records
                                 </a>
+                                <a class="btn btn-success ms-2" href="upload_attendance.php">
+                                    <span><i class="ri-upload-line"></i></span>Upload Excel
+                                </a>
+                                <a class="btn btn-info ms-2" href="templates/attendance_template.csv" download>
+                                    <span><i class="ri-download-line"></i></span>Download Template
+                                </a>
                             </div>
                         </div>
 

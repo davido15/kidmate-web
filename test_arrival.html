@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Pickup Arrival - KidMate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .test-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .test-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #007bff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .status-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧭 KidMate Pickup Arrival Test</h1>
+        <p>Test the pickup arrival confirmation system with different journey statuses.</p>
+        
+        <div class="status-info">
+            <h3>How it works:</h3>
+            <ol>
+                <li><strong>Get Location:</strong> Click to capture your current GPS location</li>
+                <li><strong>Map Display:</strong> Shows your location (blue circle) and drop-off location (red circle)</li>
+                <li><strong>Distance Check:</strong> System verifies you're within 500 meters of drop-off</li>
+                <li><strong>Confirm Arrival:</strong> Only enabled when you're close enough</li>
+            </ol>
+        </div>
+        
+        <div class="test-links">
+            <div class="test-card">
+                <h3>🚀 Journey Ready for Pickup</h3>
+                <p>Status: <strong>picked</strong> - Can confirm arrival</p>
+                <a href="pickup_arrival.php?pickup_id=JOURNEY001" class="btn">Test Arrival Confirmation</a>
+            </div>
+            
+            <div class="test-card">
+                <h3>🇬🇭 Ghana Test Location</h3>
+                <p>Coordinates: <strong>5.60951, -0.250754</strong></p>
+                <p>Status: <strong>picked</strong> - Test with real coordinates</p>
+                <a href="pickup_arrival.php?pickup_id=TEST_GHANA_001" class="btn">Test Ghana Location</a>
+            </div>
+            
+            <div class="test-card">
+                <h3>⏳ Journey in Progress</h3>
+                <p>Status: <strong>departed</strong> - Cannot confirm arrival yet</p>
+                <a href="pickup_arrival.php?pickup_id=JOURNEY002" class="btn">Test (Should Show Warning)</a>
+            </div>
+            
+            <div class="test-card">
+                <h3>✅ Journey Completed</h3>
+                <p>Status: <strong>completed</strong> - Already finished</p>
+                <a href="pickup_arrival.php?pickup_id=JOURNEY003" class="btn">Test (Should Show Completed)</a>
+            </div>
+            
+            <div class="test-card">
+                <h3>📍 Arrival Confirmed</h3>
+                <p>Status: <strong>arrived</strong> - Already confirmed arrival</p>
+                <a href="pickup_arrival.php?pickup_id=JOURNEY004" class="btn">Test (Should Show Arrived)</a>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 8px;">
+            <h3>📱 Mobile Testing</h3>
+            <p><strong>Important:</strong> This interface works best on mobile devices with GPS capabilities.</p>
+            <ul>
+                <li>Allow location access when prompted</li>
+                <li>Ensure you're outdoors or near windows for better GPS accuracy</li>
+                <li>The system requires you to be within 500 meters of the drop-off location</li>
+            </ul>
+        </div>
+        
+        <div style="margin-top: 20px; padding: 20px; background: #d1ecf1; border-radius: 8px;">
+            <h3>🔧 Technical Details</h3>
+            <ul>
+                <li><strong>Location Accuracy:</strong> Uses device GPS with accuracy circle display</li>
+                <li><strong>Distance Calculation:</strong> Haversine formula for precise distance measurement</li>
+                <li><strong>Map Integration:</strong> Google Maps API with custom markers</li>
+                <li><strong>Status Validation:</strong> Only allows arrival confirmation from 'picked' status</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

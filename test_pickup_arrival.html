@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Pickup Arrival - Direct Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .btn-success {
+            background: #28a745;
+        }
+        .btn-success:hover {
+            background: #1e7e34;
+        }
+        .coordinates {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .info-box {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧭 Pickup Arrival Test - Direct Links</h1>
+        
+        <div class="info-box">
+            <h3>📍 Static Test Coordinates</h3>
+            <div class="coordinates">
+                <strong>Drop-off Location:</strong> 5.60951, -0.250754 (Ghana)<br>
+                <strong>Test Distance:</strong> 500 meters maximum for arrival confirmation
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🚀 Test Pickup Arrival System</h3>
+            <p>Click any link below to test the arrival confirmation with different journey IDs:</p>
+            
+            <a href="pickup_arrival.php?pickup_id=TEST001" class="btn">Test with TEST001</a>
+            <a href="pickup_arrival.php?pickup_id=TEST002" class="btn">Test with TEST002</a>
+            <a href="pickup_arrival.php?pickup_id=TEST003" class="btn">Test with TEST003</a>
+            <a href="pickup_arrival.php?pickup_id=JOURNEY001" class="btn">Test with JOURNEY001</a>
+            <a href="pickup_arrival.php?pickup_id=GHANA_TEST" class="btn btn-success">Test with GHANA_TEST</a>
+        </div>
+
+        <div class="test-section">
+            <h3>📱 Mobile Testing Instructions</h3>
+            <ol>
+                <li><strong>Click any test link above</strong></li>
+                <li><strong>Allow location access</strong> when prompted by your browser</li>
+                <li><strong>Click "Get My Location"</strong> to capture your GPS coordinates</li>
+                <li><strong>View the map</strong> showing your location (blue) vs Ghana coordinates (red)</li>
+                <li><strong>Check distance</strong> - if within 500m, "Confirm Arrival" button will be enabled</li>
+                <li><strong>Click "Confirm Arrival"</strong> to test the system</li>
+            </ol>
+        </div>
+
+        <div class="test-section">
+            <h3>🔧 Manual URL Testing</h3>
+            <p>You can also manually add any pickup ID to the URL:</p>
+            <div class="coordinates">
+                pickup_arrival.php?pickup_id=YOUR_PICKUP_ID
+            </div>
+            <p>Examples:</p>
+            <ul>
+                <li><code>pickup_arrival.php?pickup_id=ABC123</code></li>
+                <li><code>pickup_arrival.php?pickup_id=MY_TEST_JOURNEY</code></li>
+                <li><code>pickup_arrival.php?pickup_id=GHANA_LOCATION_TEST</code></li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h3>🎯 Expected Behavior</h3>
+            <ul>
+                <li><strong>Map Display:</strong> Shows Ghana coordinates (5.60951, -0.250754) as red circle</li>
+                <li><strong>Your Location:</strong> Shows your GPS location as blue circle</li>
+                <li><strong>Distance Check:</strong> Calculates distance between the two points</li>
+                <li><strong>Arrival Button:</strong> Only enabled if you're within 500 meters of Ghana coordinates</li>
+                <li><strong>Status Update:</strong> Updates journey status to "arrived" when confirmed</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h3>⚠️ Important Notes</h3>
+            <ul>
+                <li>The system uses <strong>static Ghana coordinates</strong> for all tests</li>
+                <li>You need to be <strong>within 500 meters</strong> of Ghana coordinates to confirm arrival</li>
+                <li>Works best on <strong>mobile devices</strong> with GPS capabilities</li>
+                <li>Allow <strong>location permissions</strong> in your browser</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

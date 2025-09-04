@@ -7,15 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="AwesomeThemez">
-    <meta name="description" content="kidMate">
-    <title>KidMate-Kid Tracking app</title>
+    <meta name="description" content="KidMate - Next-Gen School Platform designed for every child's safety in mind. Real-time tracking, secure pickup management, and seamless school communication.">
+    <title>KidMate - Next-Gen School Platform for Child Safety</title>
     <!-- Favicon Icon -->
     <link rel="icon" href="./assets/img/favicon.svg">
     <!-- CSS plugins files -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/animate.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custome CSS -->
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -48,9 +50,8 @@
                   
                   </li>
                   <li><a href="#features" aria-label="Menu link">Features</a></li>
+                  <li><a href="#schools" aria-label="Menu link">For Schools</a></li>
                   <li><a href="#pricing" aria-label="Menu link">Pricing</a></li>
-                  <li><a href="#testimonial" aria-label="Menu link">Testimonial</a></li>
-                  
                   <li><a href="#contact" aria-label="Menu link">Contact</a></li>
                 </ul>
               </nav>
@@ -72,21 +73,27 @@
   <div class="container">
     <div class="cs_hero_text text-center">
       <h1 class="cs_hero_title cs_text_white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-     Kid Pick Up App
+        Next-Gen School Platform
       </h1>
       <p class="cs_hero_subtitle wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.25s">
-        Track, Manage and Communicate 
+        Designed for every child's safety in mind
       </p>
     </div>
 
     <div class="cs_btn_group text-center wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.25s">
-  <a href="https://play.google.com/store" target="_blank" aria-label="Download from Google Play Store" class="cs_btn cs_bg_white">
-    <img src="./assets/img/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px;">
-  </a>
-  <a href="https://www.apple.com/app-store/" target="_blank" aria-label="Download from Apple App Store" class="cs_btn cs_bg_accent">
-    <img src="./assets/img/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;">
-  </a>
-</div>
+      <a href="https://play.google.com/store" target="_blank" aria-label="Download from Google Play Store" class="cs_btn cs_bg_white">
+        <img src="./assets/img/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px;">
+      </a>
+      <a href="https://www.apple.com/app-store/" target="_blank" aria-label="Download from Apple App Store" class="cs_btn cs_bg_accent">
+        <img src="./assets/img/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;">
+      </a>
+    </div>
+    
+    <div class="cs_btn_group text-center wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s" style="margin-top: 20px;">
+      <a href="#schools" class="cs_btn cs_bg_accent" style="padding: 15px 30px; font-size: 16px; font-weight: 600;">
+        <i class="fa-solid fa-building me-2"></i>Schools - Join Waitlist
+      </a>
+    </div>
 
 
     <div class="cs_height_100 cs_height_lg_60"></div>
@@ -118,7 +125,8 @@
       <!-- Features List -->
       <div class="col-xl-6 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
         <div class="cs_section_heading cs_style_1 m-3 p-3">
-          <h2 class="cs_section_title mb-3">Ensure Safe and Efficient Kid Pickups</h2>
+          <h2 class="cs_section_title mb-3">Why Parents Choose KidMate for School Safety</h2>
+          <p class="cs_section_subtitle">In today's busy world, ensuring your child's safety during school pickups is crucial. KidMate provides peace of mind with comprehensive tracking and communication tools.</p>
         </div>
 
         <div class="cs_height_60 cs_height_lg_40"></div>
@@ -127,32 +135,32 @@
           <div class="col-lg-6">
             <div class="cs_iconbox cs_style_2">
               <div class="cs_number_box cs_bg_accent cs_text_white">01</div>
-              <h3 class="cs_iconbox_title">Track Pickup Journey</h3>
-              <p class="cs_iconbox_subtitle">Monitor the real-time location of the authorized person picking up your child for enhanced security </p>
+              <h3 class="cs_iconbox_title">Real-Time Journey Tracking</h3>
+              <p class="cs_iconbox_subtitle">Get live updates on your child's pickup journey with GPS tracking, ensuring you know exactly where they are at all times.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="cs_iconbox cs_style_2">
               <div class="cs_number_box cs_bg_accent cs_text_white">02</div>
-              <h3 class="cs_iconbox_title">Update Pickup Person</h3>
-              <p class="cs_iconbox_subtitle">Easily assign or change the pickup person from the app, with instant notification sent to the school.</p>
+              <h3 class="cs_iconbox_title">Secure Pickup Management</h3>
+              <p class="cs_iconbox_subtitle">Authorize trusted pickup persons with photo verification and instant school notifications. Change pickup arrangements anytime, anywhere.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="cs_iconbox cs_style_2">
               <div class="cs_number_box cs_bg_accent cs_text_white">03</div>
-              <h3 class="cs_iconbox_title">School Communication</h3>
-              <p class="cs_iconbox_subtitle">Directly chat or message the school from within the app for quick updates, emergencies, or coordination.</p>
+              <h3 class="cs_iconbox_title">Direct School Communication</h3>
+              <p class="cs_iconbox_subtitle">Built-in messaging system for instant communication with teachers and school staff. Perfect for emergencies, updates, and coordination.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="cs_iconbox cs_style_2">
               <div class="cs_number_box cs_bg_accent cs_text_white">04</div>
-              <h3 class="cs_iconbox_title">Student Records & Grades</h3>
-              <p class="cs_iconbox_subtitle">Access attendance logs and view academic performance reports, all from your mobile device.</p>
+              <h3 class="cs_iconbox_title">Academic Progress Monitoring</h3>
+              <p class="cs_iconbox_subtitle">Track attendance, view grades, and monitor academic performance in real-time. Stay informed about your child's educational journey.</p>
             </div>
           </div>
         </div>
@@ -164,6 +172,108 @@
   <div class="cs_height_150 cs_height_lg_75"></div>
 </section>
 
+<!-- School Waitlist Section -->
+<section id="schools" class="cs_school_waitlist" style="background: #121569;padding: 80px 0;margin-bottom: 100px;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+        <div class="cs_section_heading cs_style_1">
+          <h2 class="cs_section_title cs_text_white mb-4">Transform Your School with Digital Innovation</h2>
+          <p class="cs_section_subtitle cs_text_white mb-4">
+            Join the digital revolution in education! KidMate helps schools modernize their pickup management, 
+            improve communication with parents, and enhance overall student safety.
+          </p>
+          <div class="row cs_gap_y_30">
+            <div class="col-md-6">
+              <div class="cs_school_benefit">
+                                      <i class="fa-solid fa-shield-halved cs_text_white" style="font-size: 24px; margin-bottom: 15px;"></i>
+                <h4 class="cs_text_white">Enhanced Security</h4>
+                <p class="cs_text_white" style="font-size: 14px;">Digital verification and tracking for all student pickups</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cs_school_benefit">
+                                      <i class="fa-solid fa-comments cs_text_white" style="font-size: 24px; margin-bottom: 15px;"></i>
+                <h4 class="cs_text_white">Better Communication</h4>
+                <p class="cs_text_white" style="font-size: 14px;">Streamlined parent-teacher communication platform</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cs_school_benefit">
+                                      <i class="fa-solid fa-chart-line cs_text_white" style="font-size: 24px; margin-bottom: 15px;"></i>
+                <h4 class="cs_text_white">Data Analytics</h4>
+                <p class="cs_text_white" style="font-size: 14px;">Insights into attendance patterns and pickup efficiency</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cs_school_benefit">
+                                      <i class="fa-solid fa-mobile-screen cs_text_white" style="font-size: 24px; margin-bottom: 15px;"></i>
+                <h4 class="cs_text_white">Mobile-First</h4>
+                <p class="cs_text_white" style="font-size: 14px;">Modern app-based solution for today's digital parents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-6 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s">
+        <div class="cs_waitlist_form cs_bg_white" style="padding: 40px; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+          <h3 class="text-center mb-4" style="color: #333;">Join Our School Waitlist</h3>
+          <p class="text-center mb-4" style="color: #666;">Be among the first schools to digitize with KidMate</p>
+          
+          <form action="https://api.web3forms.com/submit" method="POST" class="cs_school_form">
+            <input type="hidden" name="access_key" value="cd98b256-0db3-478c-ab2asd8-1ec94f8aqwsq0447c">
+            <input type="hidden" name="subject" value="School Waitlist Application - KidMate">
+            
+            <div class="mb-3">
+              <input type="text" name="school_name" class="cs_form_field" placeholder="School Name*" required>
+            </div>
+            
+            <div class="mb-3">
+              <input type="text" name="contact_person" class="cs_form_field" placeholder="Contact Person Name*" required>
+            </div>
+            
+            <div class="mb-3">
+              <input type="email" name="email" class="cs_form_field" placeholder="Email Address*" required>
+            </div>
+            
+            <div class="mb-3">
+              <input type="tel" name="phone" class="cs_form_field" placeholder="Phone Number*" required>
+            </div>
+            
+            <div class="mb-3">
+              <select name="school_type" class="cs_form_field" required>
+                <option value="">Select School Type*</option>
+                <option value="nursery">Nursery/Preschool</option>
+                <option value="primary">Primary School</option>
+                <option value="secondary">Secondary School</option>
+                <option value="international">International School</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <input type="number" name="student_count" class="cs_form_field" placeholder="Approximate Student Count*" required>
+            </div>
+            
+            <div class="mb-4">
+              <textarea name="message" rows="4" class="cs_form_field" placeholder="Tell us about your school and why you're interested in KidMate*" required></textarea>
+            </div>
+            
+            <button type="submit" class="cs_btn cs_bg_accent w-100" style="padding: 15px; font-size: 16px; font-weight: 600;">
+              <i class="fa-solid fa-rocket me-2"></i>Join Waitlist
+            </button>
+            
+            <p class="text-center mt-3" style="font-size: 12px; color: #999;">
+              We'll contact you within 24 hours to discuss implementation
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
    
  
 
@@ -173,8 +283,8 @@
           <div class="cs_cta cs_style_1 text-center position-relative">
             <div class="cs_cta_in">
               <div class="cs_section_heading cs_style_1">
-                <h2 class="cs_section_title cs_text_white">Ensure your Child Safety with<br>30 Cedis/Month</h2>
-                <p class="cs_section_subtitle mb-0">Monthly Subscription<br> </p>
+                <h2 class="cs_section_title cs_text_white">Digitalise your School Operations with KidMate</h2>
+               
                 </p>
               </div>
               <div class="cs_btn_group text-center">

@@ -1,0 +1,4 @@
+[2025-03-17 20:27:01] Received request: {"phone_number":"1234567890","delivery_address":"Accra","order_item":"Pizza","total_cost":100,"title":"Delicious Pizza","description":"Large pepperoni pizza with cheese"}
+[2025-03-17 20:27:01] Order created successfully: Order ID - 12
+[2025-03-17 20:27:01] Payment link updated for order: 67d885958acc5
+[2025-03-17 20:27:04] Telegram notification sent successfully.

@@ -7,6 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = trim($_POST['name'] ?? '');
     $pickup_id = trim($_POST['pickup_id'] ?? '');
     $kid_id = trim($_POST['kid_id'] ?? '');
+    $phone = trim($_POST['phone'] ?? '');
+    $dropoff_location = trim($_POST['dropoff_location'] ?? '');
     
     if (!empty($name) && !empty($pickup_id)) {
         // Handle image upload
@@ -41,9 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Generate UUID for pickup person
             $uuid = uniqid('pickup_', true);
             
-            $query = "INSERT INTO pickup_persons (name, pickup_id, kid_id, image, uuid) VALUES (?, ?, ?, ?, ?)";
+            $query = "INSERT INTO pickup_persons (name, pickup_id, kid_id, phone, dropoff_location, image, uuid) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($query);
-            $stmt->bind_param("sssss", $name, $pickup_id, $kid_id, $image_path, $uuid);
+            $stmt->bind_param("sssssss", $name, $pickup_id, $kid_id, $phone, $dropoff_location, $image_path, $uuid);
             
             if ($stmt->execute()) {
                 header("Location: manage_pickups.php?success=Pickup person added successfully!");
@@ -105,6 +107,17 @@ if ($kids_result) {
                                         <div class="mb-3">
                                             <label class="form-label">Pickup ID</label>
                                             <input type="text" class="form-control" name="pickup_id" placeholder="Enter pickup ID" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" name="phone" placeholder="Enter phone number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Drop-off Location</label>
+                                            <input type="text" class="form-control" name="dropoff_location" placeholder="Enter drop-off location">
+                                            <small class="form-text text-muted">Address or location where the child will be dropped off</small>
                                         </div>
 
                                         <div class="mb-3">

@@ -9,6 +9,8 @@ $sql = "
         pp.name AS pickup_person_name,
         pp.pickup_id,
         pp.uuid,
+        pp.phone AS pickup_phone,
+        pp.dropoff_location,
         k.name AS student_name,
         p.name AS parent_name,
         p.phone AS parent_contact
@@ -59,9 +61,16 @@ $result = $conn->query($sql);
     <div class="card-header">
         <h4 class="card-title">Pickup Person</h4>
         <div class="card-header flex-row">
-        <a class="btn btn-primary" href="add_pickups.php"><span><i class="bi bi-plus"></i></span>Add Pickup Person</a>
-
-    </div>
+            <a class="btn btn-primary" href="add_pickups.php">
+                <span><i class="bi bi-plus"></i></span>Add Pickup Person
+            </a>
+            <a class="btn btn-success ms-2" href="upload_pickups.php">
+                <span><i class="ri-upload-line"></i></span>Upload Excel
+            </a>
+            <a class="btn btn-info ms-2" href="templates/pickups_template.csv" download>
+                <span><i class="ri-download-line"></i></span>Download Template
+            </a>
+        </div>
                         
                            
                      
@@ -94,6 +103,8 @@ $result = $conn->query($sql);
                             <th>ID</th>
                             <th>Pickup Person Name</th>
                             <th>Pickup ID</th>
+                            <th>Phone</th>
+                            <th>Drop-off Location</th>
                             <th>Student Name</th>
                             <th>Parent Name</th>
                             <th>Parent Contact</th>
@@ -110,6 +121,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['pickup_person_id']; ?></td>
                             <td><?php echo htmlspecialchars($row['pickup_person_name'] ?? 'N/A'); ?></td>
                             <td><?php echo htmlspecialchars($row['pickup_id'] ?? 'N/A'); ?></td>
+                            <td><?php echo htmlspecialchars($row['pickup_phone'] ?? 'N/A'); ?></td>
+                            <td><?php echo htmlspecialchars($row['dropoff_location'] ?? 'N/A'); ?></td>
                             <td><?php echo htmlspecialchars($row['student_name'] ?? 'N/A'); ?></td>
                             <td><?php echo htmlspecialchars($row['parent_name'] ?? 'N/A'); ?></td>
                             <td><?php echo htmlspecialchars($row['parent_contact'] ?? 'N/A'); ?></td>
@@ -122,7 +135,7 @@ $result = $conn->query($sql);
                         
                         <?php if (!$hasRecords): ?>
                         <tr>
-                            <td colspan="7" class="text-center">
+                            <td colspan="9" class="text-center">
                                 <div class="alert alert-info">
                                     <i class="fas fa-info-circle me-2"></i>
                                     No pickup persons found. <a href="add_pickups.php" class="alert-link">Add your first pickup person</a>

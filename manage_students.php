@@ -56,9 +56,16 @@ $result = $conn->query($sql);
     <div class="card-header">
         <h4 class="card-title">Students Records</h4>
         <div class="card-header flex-row">
-        <a class="btn btn-primary" href="add_students.php"><span><i class="bi bi-plus"></i></span>Add</a>
-
-    </div>
+            <a class="btn btn-primary" href="add_students.php">
+                <span><i class="bi bi-plus"></i></span>Add Student
+            </a>
+            <a class="btn btn-success ms-2" href="upload_students.php">
+                <span><i class="ri-upload-line"></i></span>Upload Excel
+            </a>
+            <a class="btn btn-info ms-2" href="templates/students_template.csv" download>
+                <span><i class="ri-download-line"></i></span>Download Template
+            </a>
+        </div>
                         
                            
                      

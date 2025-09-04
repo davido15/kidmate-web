@@ -61,8 +61,13 @@ while ($row = $parentResult->fetch_assoc()) {
     <div class="card-header">
         <h4 class="card-title">Payments Records</h4>
         <div class="card-header flex-row">
-        <a class="btn btn-primary" href="add_attendance.php"><span><i class="bi bi-plus"></i></span>Add Records</a>
-    </div>
+            <a class="btn btn-primary" href="add_payment.php">
+                <span><i class="bi bi-plus"></i></span>Add Payment
+            </a>
+            <a class="btn btn-success ms-2" href="generate_payment_link.php">
+                <span><i class="ri-link"></i></span>Generate Payment Link
+            </a>
+        </div>
                         
                                       
     </div>

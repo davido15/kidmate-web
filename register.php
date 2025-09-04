@@ -1,14 +1,27 @@
 <?php
 include "db.php";
+include "email_service.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
+    $email = $_POST["email"] ?? '';
+    $phone = $_POST["phone"] ?? '';
     $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
 
-    $stmt = $conn->prepare("INSERT INTO admin_users (username, password_hash) VALUES (?, ?)");
-    $stmt->bind_param("ss", $username, $password);
+    $stmt = $conn->prepare("INSERT INTO admin_users (username, email, phone, password_hash) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $username, $email, $phone, $password);
 
     if ($stmt->execute()) {
+        // Send welcome email if email is provided
+        if (!empty($email)) {
+            $emailService = new EmailService();
+            $emailService->sendWelcomeEmail($email, $username);
+        }
+        
+        // Send admin notification to daviddors12@gmail.com
+        $emailService = new EmailService();
+        $emailService->sendAdminNotification("daviddors12@gmail.com", $username, $email, $phone);
+        
         echo "Registration successful. <a href='login.php'>Login here</a>";
     } else {
         echo "Error: " . $stmt->error;
@@ -60,6 +73,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="col-12">
                                 <label class="form-label">Username</label>
                                 <input type="text" class="form-control" placeholder="Username" name="username" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="Phone" name="phone" required>
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Password</label>

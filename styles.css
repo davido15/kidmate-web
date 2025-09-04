@@ -4368,4 +4368,109 @@ Pricing controller
     background-color: transparent;
     box-shadow: none;
   }
+}
+
+/*--------------------------------------------------------------
+21. School Waitlist Section
+----------------------------------------------------------------*/
+.cs_school_waitlist {
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_school_waitlist::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.cs_school_benefit {
+  text-align: center;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cs_school_benefit i {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.cs_school_benefit h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cs_school_benefit p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cs_waitlist_form {
+  position: relative;
+  z-index: 2;
+}
+
+.cs_waitlist_form .cs_form_field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.cs_waitlist_form .cs_form_field:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(18, 21, 105, 0.1);
+  outline: none;
+}
+
+.cs_waitlist_form select.cs_form_field {
+  cursor: pointer;
+}
+
+.cs_waitlist_form .cs_btn {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cs_waitlist_form .cs_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(18, 21, 105, 0.3);
+}
+
+@media (max-width: 768px) {
+  .cs_school_waitlist {
+    padding: 60px 0;
+  }
+  
+  .cs_waitlist_form {
+    margin-top: 40px;
+    padding: 30px 20px;
+  }
+  
+  .cs_school_benefit {
+    padding: 15px 10px;
+    margin-bottom: 15px;
+  }
+  
+  .cs_school_benefit h4 {
+    font-size: 16px;
+  }
+  
+  .cs_school_benefit p {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */

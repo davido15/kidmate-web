@@ -1,0 +1,10 @@
+[2025-05-12 13:38:57] - Geocoding location: Osu | URL: https://api.geoapify.com/v1/geocode/search?text=Osu&format=json&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-05-12 13:38:58] - Resolved coordinates for 'Osu': lat=5.5605929, lon=-0.1824391
+[2025-05-12 13:38:58] - Nearby Search URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.1824391%2C5.5605929%2C1500&bias=proximity%3A-0.1824391%2C5.5605929&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-05-12 13:38:59] - Response Code: 200
+[2025-05-12 13:38:59] - Returned 10 nearby places.
+[2025-05-12 14:04:10] - Geocoding location: Osu | URL: https://api.geoapify.com/v1/geocode/search?text=Osu&format=json&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-05-12 14:04:12] - Resolved coordinates for 'Osu': lat=5.5605929, lon=-0.1824391
+[2025-05-12 14:04:12] - Nearby Search URL: https://api.geoapify.com/v2/places?categories=catering.restaurant%2Ccatering.bar%2Ccatering.fast_food&filter=circle%3A-0.1824391%2C5.5605929%2C1500&bias=proximity%3A-0.1824391%2C5.5605929&lang=en&limit=10&apiKey=88c40f69bbe84221ba7a2d661eb80a85
+[2025-05-12 14:04:13] - Response Code: 200
+[2025-05-12 14:04:13] - Returned 10 nearby places.

@@ -47,8 +47,16 @@ while ($row = $parentResult->fetch_assoc()) {
     <div class="card-header">
         <h4 class="card-title">Parents Records</h4>
         <div class="card-header flex-row">
-        <a class="btn btn-primary" href="add_parents.php"><span><i class="bi bi-plus"></i></span>Add Parents</a>
-    </div>
+            <a class="btn btn-primary" href="add_parents.php">
+                <span><i class="bi bi-plus"></i></span>Add Parents
+            </a>
+            <a class="btn btn-success ms-2" href="upload_parents.php">
+                <span><i class="ri-upload-line"></i></span>Upload Excel
+            </a>
+            <a class="btn btn-info ms-2" href="templates/parents_template.csv" download>
+                <span><i class="ri-download-line"></i></span>Download Template
+            </a>
+        </div>
                         
     </div>
 

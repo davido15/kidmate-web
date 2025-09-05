@@ -3,8 +3,8 @@
 <?php
 
 // API Request Configuration
-$api_url = "https://api.elevenlabs.io/v1/convai/conversations/pJogidJq7xiFDbHKMUqF";
-$api_key = "sk_b1f548a76a483942b3658f1948019e1ffb3a62f2616d5a41";
+$api_url = "https://api.elevenlabs.io/v1/convai/conversations/YOUR_CONVERSATION_ID";
+$api_key = "YOUR_ELEVENLABS_API_KEY";
 
 // Initialize cURL
 $ch = curl_init($api_url);

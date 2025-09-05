@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Place Autocomplete (New)</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI3BeN_0gsceNXmsWV2aWytqUIr5xbKBQ&libraries=places&v=weekly" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&v=weekly" defer></script>
     <script>
       function handlePlaceChanged() {
         const placeAutocomplete = document.querySelector('gmpx-place-autocomplete');

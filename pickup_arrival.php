@@ -168,7 +168,7 @@ if (empty($journey_data) && !empty($pickup_id)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickup Arrival - KidMate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davido15/pozy-static@main/css/style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmMQciNJ3Kl_ABFCNMVuAj7g7UcujwmxE&libraries=geometry"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=geometry"></script>
     <style>
         body {
             font-family: Arial, sans-serif;

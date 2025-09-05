@@ -5,8 +5,8 @@ include "payment_functions.php"; // Payment link generator
 include "log.php"; // Logging function
 
 // Telegram Bot Configuration
-$TELEGRAM_BOT_TOKEN = "7076376293:AAFHe7F4_Lb2Gi-bxlNuHUwJ5kaf2gyo6Mo";
-$TELEGRAM_CHAT_ID = "5056602137"; // Replace with your Telegram chat ID
+$TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
+$TELEGRAM_CHAT_ID = "YOUR_TELEGRAM_CHAT_ID"; // Replace with your Telegram chat ID
 
 $BASE_PAYMENT_URL = "https://outrankconsult.com/pozy/details.php?orderid=";
 
